@@ -215,6 +215,10 @@ on boot
     # limit discard size to 128MB in order to avoid long IO latency
     write /sys/block/sda/queue/discard_max_bytes 134217728
 
+    # Vibrator
+    chown system audio /sys/class/leds/vibrator/activate
+    chmod 0660 /sys/class/leds/vibrator/activate
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -377,6 +381,14 @@ on post-fs-data
 
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
+
+    # Haptics vibrator
+    chown system system /sys/class/leds/vibrator/play_mode
+    chown system system /sys/class/leds/vibrator/vmax_mv
+    chown system system /sys/class/leds/vibrator/wf_samp
+    chown system system /sys/class/leds/vibrator/wf_rep_count
+    chown system system /sys/class/leds/vibrator/wf_s_rep_count
+    chown system system /sys/class/leds/vibrator/lra_auto_mode
 
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
@@ -949,13 +961,19 @@ on property:vendor.opengles.version=*
 on property:vendor.gpu.available_frequencies=*
     setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
 
-service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
+service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     override
     class hal
     user audioserver
     # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
-    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock input
+    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock
     capabilities BLOCK_SUSPEND
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
-    onrestart restart audioserver
+    # audioflinger restarts itself when it loses connection with the hal
+    # and its .rc file has an "onrestart restart audio-hal" rule, thus
+    # an additional auto-restart from the init process isn't needed.
+    oneshot
+    interface android.hardware.audio@5.0::IDevicesFactory default
+    interface android.hardware.audio@4.0::IDevicesFactory default
+    interface android.hardware.audio@2.0::IDevicesFactory default
