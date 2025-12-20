@@ -20,8 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/sony/pdx206/pdx206-vendor.mk)
+# Include common vendor stuff
+#$(call inherit-product, vendor/sony/edo-common/edo-common-vendor.mk)
 
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -82,8 +82,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
-    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
+    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
+    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -170,7 +170,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
     $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
-    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
@@ -180,7 +179,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
     $(LOCAL_PATH)/audio/audio_platform_info_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_qrd.xml
-
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
@@ -341,11 +340,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
-# # HIDL
-# PRODUCT_PACKAGES += \
-#     libhidltransport \
-#     libhwbinder \
-
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
@@ -364,10 +358,6 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
-
-# Livedisplay (Not having this causes a bootloop on 17.1)
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -390,6 +380,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.sony_edo
 
+# Livedisplay (Not having this causes a bootloop on 17.1)
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
@@ -401,10 +395,11 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
     android.hardware.nfc@1.2-service \
-	android.hardware.secure_element@1.1.vendor \
-	android.hardware.secure_element@1.2.vendor \
+    com.android.nfc_extras \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.nfc@1.2.vendor \
     NfcNci \
     SecureElement \
     Tag
@@ -500,8 +495,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
+    vendor.qti.hardware.vibrator@1.2-service
 
 # WiFi
 PRODUCT_PACKAGES += \
@@ -525,6 +519,10 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
+
+# XperiaParts
+#PRODUCT_PACKAGES += \
+#    XperiaParts
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
