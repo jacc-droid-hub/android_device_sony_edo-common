@@ -130,6 +130,16 @@
         <fqname>@4.0::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.light</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ILight</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.0::ILight/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.media.omx</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -485,6 +495,53 @@
         <fqname>@2.1::IRTPService/imsrtpservice</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.qspmhal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IQspmhal</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IQspmhal/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.semc.hardware.charger</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICharger</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ICharger/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.semc.hardware.display</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IDisplay</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFramerateController</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.2::IDisplay/default</fqname>
+        <fqname>@1.2::IFramerateController/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.semc.system.idd</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IIdd</name>
+            <instance>default</instance>
+            <instance>logreader</instance>
+        </interface>
+        <fqname>@1.0::IIdd/default</fqname>
+        <fqname>@1.0::IIdd/logreader</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.somc.hardware.miscta</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -514,4 +571,7 @@
         </interface>
         <fqname>@1.0::IHidlSwiqi/default</fqname>
     </hal>
+    <sepolicy>
+        <version>29.0</version>
+    </sepolicy>
 </manifest>
