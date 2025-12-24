@@ -200,6 +200,11 @@
         <fqname>@2.1::IFactory/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.esepowermanager</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IEsePowerManager/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.gnss</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ILocHidlGnss/gnss_vendor</fqname>
@@ -265,6 +270,11 @@
         <name>vendor.qti.hardware.qccvndhal</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IQccvndhal/qccvndhal</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.iop</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IIop/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.perf</name>
@@ -395,11 +405,6 @@
       <fqname>@1.1::IDeviceSecurity/default</fqname>
     </hal>
     <hal format="hidl">
-      <name>vendor.somc.hardware.security.secd</name>
-      <transport>hwbinder</transport>
-      <fqname>@1.1::IDeviceSecurity/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.qspmhal</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -416,20 +421,10 @@
         <fqname>@2.2::IFramerateController/default</fqname>
     </hal>
     <hal format="hidl">
-      <name>vendor.qti.hardware.iop</name>
-      <transport>hwbinder</transport>
-      <fqname>@2.0::IIop/default</fqname>
-    </hal>
-    <hal format="hidl">
-      <name>vendor.qti.esepowermanager</name>
-      <transport>hwbinder</transport>
-      <fqname>@1.1::IEsePowerManager/default</fqname>
-    </hal>
-    <hal format="hidl">
-      <name>vendor.semc.system.idd</name>
-      <transport>hwbinder</transport>
-      <fqname>@1.0::IIdd/default</fqname>
-      <fqname>@1.0::IIdd/logreader</fqname>
+        <name>vendor.semc.system.idd</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IIdd/default</fqname>
+        <fqname>@1.0::IIdd/logreader</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.somc.hardware.radio</name>
@@ -452,6 +447,11 @@
         <name>vendor.qti.hardware.fm</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IFmHci/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.somc.hardware.security.secd</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IDeviceSecurity/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.btconfigstore</name>
