@@ -20,6 +20,24 @@
         <fqname>@5.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.authsecret</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IAuthSecret</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -36,6 +54,16 @@
             <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
         </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <version>2.4</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>internal/0</instance>
+        </interface>
+        <fqname>@2.4::ICameraProvider/internal/0</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.drm</name>
@@ -55,6 +83,15 @@
         <fqname>@1.1::IDrmFactory/widevine</fqname>
         <fqname>@1.2::ICryptoFactory/clearkey</fqname>
         <fqname>@1.2::IDrmFactory/clearkey</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGatekeeper</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gnss</name>
@@ -82,6 +119,11 @@
         <name>android.hardware.memtrack</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IMemtrack/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::INfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio</name>
@@ -112,6 +154,16 @@
         <fqname>@2.1::ISoundTriggerHw/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.tetheroffload.config</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOffloadConfig/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tetheroffload.control</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOffloadControl/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IdpmQmi/dpmQmiService</fqname>
@@ -128,6 +180,21 @@
         <fqname>@2.0::IDisplayModes/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.egistec.hardware.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>4.0</version>
+        <interface>
+            <name>IBiometricsFingerprintRbs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.nxp.nxpnfc</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::INxpNfc/default</fqname>
+        <fqname>@2.0::INxpNfc/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
         <fqname>@2.1::IFactory/default</fqname>
@@ -141,6 +208,11 @@
         <name>vendor.qti.hardware.alarm</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IAlarm/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.audiohalext</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAudioHalExt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_audio</name>
@@ -193,6 +265,11 @@
         <name>vendor.qti.hardware.qccvndhal</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IQccvndhal/qccvndhal</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.perf</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.2::IPerf/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.qseecom</name>
@@ -323,6 +400,22 @@
       <fqname>@1.1::IDeviceSecurity/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.qspmhal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IQspmhal</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IQspmhal/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.semc.hardware.display</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.2::IDisplay/default</fqname>
+        <fqname>@2.2::IFramerateController/default</fqname>
+    </hal>
+    <hal format="hidl">
       <name>vendor.qti.hardware.iop</name>
       <transport>hwbinder</transport>
       <fqname>@2.0::IIop/default</fqname>
@@ -339,27 +432,6 @@
       <fqname>@1.0::IIdd/logreader</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.perf</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.2::IPerf/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.semc.hardware.display</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.2::IDisplay/default</fqname>
-        <fqname>@2.2::IFramerateController/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.tetheroffload.config</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IOffloadConfig/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.tetheroffload.control</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IOffloadControl/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.somc.hardware.radio</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::ISomcHook/somchook</fqname>
@@ -370,25 +442,6 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::ISecureElement/SIM1</fqname>
         <fqname>@1.0::ISecureElement/SIM2</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.2::INfc/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.audiohalext</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IAudioHalExt/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.gatekeeper</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IGatekeeper</name>
-            <instance>default</instance>
-        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.somc.hardware.miscta</name>
@@ -406,52 +459,9 @@
         <fqname>@2.0::IBTConfigStore/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.camera.provider</name>
-        <transport>hwbinder</transport>
-        <version>2.4</version>
-        <interface>
-            <name>ICameraProvider</name>
-            <instance>internal/0</instance>
-        </interface>
-        <fqname>@2.4::ICameraProvider/internal/0</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.nxpnfc</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::INxpNfc/default</fqname>
-        <fqname>@2.0::INxpNfc/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.somc.hardware.swiqi</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IHidlSwiqi/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.biometrics.fingerprint</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.egistec.hardware.fingerprint</name>
-        <transport>hwbinder</transport>
-        <version>4.0</version>
-        <interface>
-            <name>IBiometricsFingerprintRbs</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.authsecret</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAuthSecret</name>
-            <instance>default</instance>
-        </interface>
     </hal>
     <manifest version="1.0" type="device">
         <hal format="aidl">
@@ -460,14 +470,4 @@
             <fqname>ILights/default</fqname>
         </hal>
     </manifest>
-    <hal format="hidl">
-        <name>vendor.qti.qspmhal</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQspmhal</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IQspmhal/default</fqname>
-    </hal>
 </manifest>
