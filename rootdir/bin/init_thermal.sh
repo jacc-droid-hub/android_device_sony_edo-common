@@ -2,6 +2,9 @@
 SENSOR_LIST="sdm_modem_skin_sa"
 
 MODEL=$(getprop ro.product.model)
+if [ "${MODEL}" != "XQ-AT72" -a "${MODEL}" != "XQ-AS72" ]; then
+	exit
+fi
 I=0;
 while true; do
 	if [ ! -d /sys/class/thermal/thermal_zone${I} ]; then
