@@ -43,12 +43,6 @@ on property:dev.bootcomplete=1 && property:vendor.wireless_charging=0
     write /sys/devices/virtual/sec/tsp/cmd "wireless_charging,0"
 
 # Display
-on property:persist.vendor.display.opec_mode=0 && property:vendor.enable.always_on_display=0 && property:vendor.backlight_on=1
-    write /sys/devices/dsi_panel_driver/opec_mode 0
-
-on property:persist.vendor.display.opec_mode=1 && property:vendor.enable.always_on_display=0 && property:vendor.backlight_on=1
-    write /sys/devices/dsi_panel_driver/opec_mode 1
-
 # Not reccomended to send HMD command during AOD in terms of HW,
 # so not set if vendor.enable.always_on_display = 1
 on property:vendor.display.hmd_mode=0 && property:vendor.enable.always_on_display=0 && property:vendor.backlight_on=1
