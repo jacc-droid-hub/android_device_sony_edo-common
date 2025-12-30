@@ -237,7 +237,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    init.qti.ufs.rc \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.qti.ims.sh \
@@ -245,7 +244,6 @@ PRODUCT_PACKAGES += \
     qca6234-service.sh \
     init.recovery.qcom.rc \
     init.target.rc \
-    ueventd.qcom.rc \
     fstab.qcom \
     texfat.rc \
     init.nfc.rc \
