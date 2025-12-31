@@ -223,6 +223,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SemcCameraUI
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
+# Remove unwanted packages
+#PRODUCT_PACKAGES += \
+#    RemovePackages
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init_thermal.sh \
