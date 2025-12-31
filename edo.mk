@@ -219,6 +219,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+# Using Sony Vendor Camera
+PRODUCT_PACKAGES += \
+    SemcCameraUI
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init_thermal.sh \
