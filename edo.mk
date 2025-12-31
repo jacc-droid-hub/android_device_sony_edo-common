@@ -249,7 +249,10 @@ PRODUCT_PACKAGES += \
     init.nfc.rc \
     init.sony-device-common.rc \
     init.sony-platform.rc \
-    init.sony.usb.rc
+    init.sony.usb.rc \
+    idd.fstab \
+    init.msm.usb.configfs.rc \
+    init.sony.idd.rc
 
 # Configstore
 PRODUCT_PACKAGES += \
