@@ -147,9 +147,9 @@ vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/libHpEqApi.so
 vendor/lib64/libOARenderer.so
-vendor/lib64/libSForceVSE.so
 vendor/lib64/libSNPE.so
 vendor/lib64/liba2dpoffload.so
+vendor/lib64/libSForceVSE.so
 vendor/lib64/libaudiokeymgr.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libcomprcapture.so
@@ -454,7 +454,6 @@ vendor/lib64/com.qti.feature2.rt.so
 vendor/lib64/com.qti.feature2.serializer.so
 vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
-vendor/lib64/libSNPE.so
 vendor/lib64/libarcsoft_bokeh_adapter.so
 vendor/lib64/libarcsoft_dualcam_refocus_image.so
 vendor/lib64/libarcsoft_dualcam_refocus_video.so
