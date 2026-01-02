@@ -215,7 +215,7 @@ PRODUCT_PACKAGES_DEBUG += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5.vendor \
-    android.hardware.camera.provider@2.6.vendor \
+    android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.common@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
@@ -223,13 +223,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SemcCameraUI
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 # Remove unwanted packages
-#PRODUCT_PACKAGES += \
-#    RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Common init scripts
 PRODUCT_PACKAGES += \
