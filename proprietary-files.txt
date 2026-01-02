@@ -67,8 +67,8 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # from instantnoodlep idk what version
-system/lib/libantradio.so|8cac14e0ae2e6bc6d41e09bd231d61b8ac86e185
-system/lib64/libantradio.so|d7ba7651e2e5dcf2a88bcbb16cc36f1579669e3c
+-system/lib/libantradio.so|8cac14e0ae2e6bc6d41e09bd231d61b8ac86e185
+-system/lib64/libantradio.so|d7ba7651e2e5dcf2a88bcbb16cc36f1579669e3c
 
 # Audio Extensions
 vendor/lib/libhdmipassthru.so
@@ -591,7 +591,7 @@ product/lib64/vendor.qti.hardware.data.connection@1.1.so
 product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 product/lib64/vendor.qti.hardware.data.iwlan@1.0.so
 product/lib64/vendor.qti.hardware.data.qmi@1.0.so
-vendor/app/CneApp/CneApp.apk
+-vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
@@ -697,7 +697,9 @@ vendor/lib64/vendor.qti.latency@2.0.so
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
+-vendor/lib/libplatformconfig.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
+-vendor/lib64/libplatformconfig.so
 
 # Display
 vendor/bin/hw/vendor.semc.hardware.display@1.2-service
@@ -770,7 +772,7 @@ product/lib64/libdpmctmgr.so
 product/lib64/libdpmfdmgr.so
 product/lib64/libdpmframework.so
 product/lib64/libdpmtcm.so
-product/priv-app/dpmserviceapp/dpmserviceapp.apk
+-product/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
@@ -885,7 +887,7 @@ vendor/lib/hw/vulkan.kona.so
 vendor/lib64/hw/vulkan.kona.so
 
 # GNSS
-vendor/app/CACertService/CACertService.apk
+-vendor/app/CACertService/CACertService.apk
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
@@ -1255,16 +1257,16 @@ vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio
-product/app/QtiTelephonyService/QtiTelephonyService.apk
-product/app/embms/embms.apk
+-product/app/QtiTelephonyService/QtiTelephonyService.apk
+-product/app/embms/embms.apk
 product/etc/permissions/embms.xml
 product/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml
 product/framework/QtiTelephonyServicelibrary.jar
 product/framework/embmslibrary.jar
 product/framework/qcrilhook.jar
-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-vendor/app/IWlanService/IWlanService.apk
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+-vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
@@ -1347,7 +1349,7 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
-product/app/uceShimService/uceShimService.apk
+-product/app/uceShimService/uceShimService.apk
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
@@ -1606,7 +1608,7 @@ vendor/bin/ta_qmi_service
 -vendor/lib64/libta.so
 
 # Time services
-vendor/app/TimeService/TimeService.apk
+-vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
