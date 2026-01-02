@@ -302,6 +302,19 @@ vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
 vendor/lib/hw/camera.qcom.so
+vendor/lib/libcamera_nn_stub.so
+vendor/lib/libcamerapostproc.so
+vendor/lib/libcammw_util.so
+vendor/lib/libcamxexternalformatutils.so
+vendor/lib/libcamxfacialfeatures.so
+vendor/lib/libcamxfdalgo.so
+vendor/lib/libcamxfdengine.so
+vendor/lib/libcamxifestriping.so
+vendor/lib/libcamximageformatutils.so
+vendor/lib/libcamxncs.so
+vendor/lib/libcamxstatscore.so
+vendor/lib/libcamxswprocessalgo.so
+vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libofflinelog.so
@@ -426,6 +439,22 @@ vendor/lib64/camera/libexcal_splitter_plugin.so
 vendor/lib64/camera/libexcal_stream_ctrl_plugin.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/com.qti.feature2.anchorsync.so
+vendor/lib64/com.qti.feature2.demux.so
+vendor/lib64/com.qti.feature2.frameselect.so
+vendor/lib64/com.qti.feature2.fusion.so
+vendor/lib64/com.qti.feature2.generic.so
+vendor/lib64/com.qti.feature2.gs.so
+vendor/lib64/com.qti.feature2.hdr.so
+vendor/lib64/com.qti.feature2.memcpy.so
+vendor/lib64/com.qti.feature2.mfsr.so
+vendor/lib64/com.qti.feature2.qcfa.so
+vendor/lib64/com.qti.feature2.rawhdr.so
+vendor/lib64/com.qti.feature2.rt.so
+vendor/lib64/com.qti.feature2.serializer.so
+vendor/lib64/com.qti.feature2.stub.so
+vendor/lib64/com.qti.feature2.swmf.so
+vendor/lib64/libSNPE.so
 vendor/lib64/libarcsoft_bokeh_adapter.so
 vendor/lib64/libarcsoft_dualcam_refocus_image.so
 vendor/lib64/libarcsoft_dualcam_refocus_video.so
@@ -461,6 +490,7 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libos.so
+vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libsomc_alfortlpserv.so
 vendor/lib64/libsomc_angelpie.so
 vendor/lib64/libsomc_angelpie_impl.so
@@ -559,6 +589,9 @@ vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger
 vendor/bin/hvdcp_opti
+vendor/bin/chg-pwr-service
+vendor/bin/hw/vendor.semc.hardware.charger@1.0-service
+vendor/etc/init/vendor.semc.hardware.charger@1.0-service.rc
 
 # CNE
 product/framework/com.quicinc.cne.api-V1.1-java.jar
@@ -942,7 +975,13 @@ vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
+vendor/etc/apdr.conf
+vendor/etc/flp.conf
+vendor/etc/gps.conf
 vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc
+vendor/etc/izat.conf
+vendor/etc/lowi.conf
+vendor/etc/sap.conf
 vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
 vendor/etc/cacert_location.pem
@@ -980,6 +1019,7 @@ vendor/lib/vendor.qti.gnss@2.0.so
 vendor/lib/vendor.qti.gnss@2.1.so
 vendor/lib/vendor.qti.gnss@3.0-service.so
 vendor/lib/vendor.qti.gnss@3.0.so
+vendor/etc/xtwifi.conf
 vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so
 vendor/lib64/libaoa.so
@@ -1220,6 +1260,7 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 vendor/lib64/hw/sound_trigger.primary.kona.so
 vendor/lib64/libcapiv2svacnn.so
+vendor/lib64/libcapiv2svarnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
@@ -1335,6 +1376,7 @@ vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVdec.so
 vendor/lib64/libOmxVenc.so
 vendor/lib64/libOmxVpp.so
+vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
 
 # Peripheral manager
@@ -1604,6 +1646,8 @@ product/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib/vendor.qti.data.slm@1.0.so
 
 # Secd
+system/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
+system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/hw/vendor.semc.hardware.secd@1.1-service
 vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service
@@ -1713,6 +1757,7 @@ vendor/etc/sensors/config/kona_sx932x_0.json
 vendor/etc/sensors/config/kona_tmd2725_0.json
 vendor/etc/sensors/config/lsm6dsm_0.json
 vendor/etc/sensors/config/sns_amd.json
+vendor/etc/sensors/config/sns_amd_sw_disabled.json
 vendor/etc/sensors/config/sns_amd_sw_enabled.json
 vendor/etc/sensors/config/sns_aont.json
 vendor/etc/sensors/config/sns_basic_gestures.json
@@ -1744,6 +1789,7 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/stk3x3x_0.json
+vendor/etc/sensors/config/wigig_sensing_0.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
@@ -1865,13 +1911,16 @@ vendor/lib64/libtpm.so
 vendor/bin/hw/vendor.semc.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
 vendor/etc/init/vendor.semc.hardware.thermal@1.0-service.rc
+vendor/etc/init/init_thermal-engine.rc
 vendor/lib/hw/thermal.somc.so
 vendor/lib/liblights-core.so
 vendor/lib/libsys-utils.so
+vendor/lib/libsomc_thermal.so
 vendor/lib/libthermal_engine.so
 -vendor/lib/libthermalclient.so
 vendor/lib64/hw/thermal.somc.so
 vendor/lib64/liblights-core.so
+vendor/lib64/libsomc_thermal.so
 vendor/lib64/libsys-utils.so
 vendor/lib64/libthermal_engine.so
 -vendor/lib64/libthermalclient.so
@@ -1991,6 +2040,7 @@ vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/lib/libFileMux_proprietary.so
 vendor/lib/libOmxMux_proprietary.so
 vendor/lib/libmmparser_lite_proprietary.so
+vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libmmrtpencoder_proprietary.so
 vendor/lib/libwfdaac_vendor.so
@@ -2019,6 +2069,8 @@ vendor/lib64/libOmxMux_proprietary.so
 vendor/lib64/libmmparser_lite_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+vendor/lib64/libmmrtpdecoder_proprietary.so
+vendor/lib64/libmmrtpencoder_proprietary.so
 
 # VPP
 vendor/bin/vppservice
@@ -2056,3 +2108,7 @@ vendor/etc/wifi/icm.conf
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/regdb.bin
 vendor/etc/wifi/wpa_supplicant_overlay.conf
+
+# SIM control
+odm/bin/sony_ext_uim_ctrl
+odm/etc/init/sony_ext_uim_ctrl.rc
