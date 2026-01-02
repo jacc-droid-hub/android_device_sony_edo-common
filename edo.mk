@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Include common vendor stuff
-#$(call inherit-product, vendor/sony/edo-common/edo-common-vendor.mk)
+$(call inherit-product, vendor/sony/edo-common/edo-common-vendor.mk)
 
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
