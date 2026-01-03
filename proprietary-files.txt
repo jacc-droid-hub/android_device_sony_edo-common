@@ -1070,6 +1070,7 @@ vendor/lib/kobjeventd/touch_cover.so
 vendor/lib64/kobjeventd/touch_cover.so
 
 # Listen
+vendor/lib64/hw/sound_trigger.primary.kona.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
@@ -1081,6 +1082,7 @@ vendor/lib/liblistenjni.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
+vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2svarnn.so
 vendor/lib64/libcapiv2vop.so
