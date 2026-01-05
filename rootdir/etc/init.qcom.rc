@@ -1,5 +1,4 @@
-# Copyright (c) 2009-2012, 2014-2019, The Linux Foundation. All rights reserved.
-# Copyright (C) 2019 Sony Mobile Communications Inc.
+# Copyright (c) 2009-2012, 2014-2020, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -25,12 +24,8 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# NOTE: This file has been modified by Sony Mobile Communications Inc.
-# Modifications are licensed under the License.
-#
 
 import /vendor/etc/init/hw/init.qcom.usb.rc
-#import /vendor/etc/init/hw/init.msm.usb.configfs.rc
 import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.qcom.factory.rc
@@ -764,18 +759,6 @@ on property:crypto.driver.load=1
      insmod /system/lib/modules/qce.ko
      insmod /system/lib/modules/qcedev.ko
 
-service drmdiag /system/vendor/bin/drmdiagapp
-    class late_start
-     user root
-     disabled
-     oneshot
-
-on property:drmdiag.load=1
-    start drmdiag
-
-on property:drmdiag.load=0
-    stop drmdiag
-
 service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
@@ -843,13 +826,13 @@ service vendor.wigig_hostapd /vendor/bin/hw/hostapd -dd  -j wigighostapd /data/v
     oneshot
     disabled
 
-service ims_regmanager /system/vendor/bin/exe-ims-regmanagerprocessnative
-    class late_start
-    group net_bt_admin inet radio wifi
-    disabled
-
-on property:persist.ims.regmanager.mode=1
-    start ims_regmanager
+# service ims_regmanager /system/vendor/bin/exe-ims-regmanagerprocessnative
+#     class late_start
+#     group net_bt_admin inet radio wifi
+#     disabled
+#
+# on property:persist.ims.regmanager.mode=1
+#     start ims_regmanager
 
 service battery_monitor /system/bin/battery_monitor
     user system
@@ -876,12 +859,12 @@ service profiler_daemon /system/bin/profiler_daemon
     group root
     disabled
 
-#service charger /system/bin/charger
-#    class charger
-#    user system
-#    group system graphics input
-#    capabilities SYS_BOOT
-#    seclabel u:r:charger:s0
+service charger /system/bin/charger
+    class charger
+    user system
+    group system graphics input
+    capabilities SYS_BOOT
+    seclabel u:r:charger:s0
 
 service vendor.ssr_diag /system/vendor/bin/ssr_diag
     class late_start
@@ -1026,11 +1009,6 @@ on property:vendor.rild.libpath=*
 
 on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}
-
-#service seemp_healthd /vendor/bin/seemp_healthd
-#    class late_start
-#    user system
-#    group system
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
