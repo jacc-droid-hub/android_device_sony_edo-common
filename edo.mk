@@ -275,6 +275,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.kona \
     libqdMetaData \
+    libqdMetaData.vendor \
     libsdmcore \
     libsdmutils \
     memtrack.kona \
@@ -419,6 +420,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
+    android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.nfc@1.2.vendor \
     NfcNci \
@@ -467,7 +469,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
-    libxml2
+    libxml2 \
+    extphonelib \
+    extphonelib.xml
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -501,7 +505,7 @@ PRODUCT_PACKAGES += \
 
 # Trust HAL
 PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
+    vendor.lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
