@@ -2,7 +2,6 @@
 hidl_interface {
     name: "vendor.semc.hardware.charger@1.0",
     root: "vendor.semc",
-    system_ext_specific: true,
     srcs: [
         "ICharger.hal",
     ],

@@ -2,7 +2,6 @@
 hidl_interface {
     name: "vendor.semc.hardware.display@1.2",
     root: "vendor.semc",
-    system_ext_specific: true,
     srcs: [
         "IDisplay.hal",
         "IFramerateController.hal",
