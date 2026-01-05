@@ -506,6 +506,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     thermal.edo
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.sony
+
 # Trust HAL
 PRODUCT_PACKAGES += \
     lineage.trust@1.0-service
