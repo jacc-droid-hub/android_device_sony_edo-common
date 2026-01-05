@@ -405,7 +405,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+    vendor.lineage.livedisplay@2.0-service.sony
 
 # Net
 PRODUCT_PACKAGES += \
@@ -558,8 +558,8 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # XperiaParts
-#PRODUCT_PACKAGES += \
-#    XperiaParts
+PRODUCT_PACKAGES += \
+    XperiaParts
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
