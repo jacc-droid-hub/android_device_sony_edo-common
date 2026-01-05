@@ -1277,6 +1277,10 @@ vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/vendor.qti.hardware.perf@2.0.so
 
+# Privapp permissions
+system/etc/permissions/privapp-permissions-com.qualcomm.location.xml
+system/etc/permissions/privapp-permissions-sony.xml
+
 # QMI
 system/etc/permissions/privapp-permissions-qti.xml
 system/etc/permissions/qti_libpermissions.xml
@@ -1336,7 +1340,7 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
 -product/app/embms/embms.apk
-product/etc/permissions/com.qualcomm.location.xml
+system/etc/permissions/com.qualcomm.location.xml
 system/etc/permissions/com.qualcomm.qti.izattools.xml
 product/etc/permissions/embms.xml
 product/etc/permissions/qcrilhook.xml
