@@ -230,6 +230,7 @@ PRODUCT_PACKAGES += \
     init.qcom.coex.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
+    init.qcom.msim.sh \
     init.qcom.factory.rc \
     init.qcom.post_boot.sh \
     init.qcom.rc \
@@ -241,7 +242,6 @@ PRODUCT_PACKAGES += \
     init.qti.ufs.rc \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
-    init.qti.ims.sh \
     init.qti.qcv.sh \
     qca6234-service.sh \
     init.recovery.qcom.rc \
@@ -253,6 +253,7 @@ PRODUCT_PACKAGES += \
     init.sony-device-common.rc \
     init.sony-platform.rc \
     init.sony.usb.rc \
+    init.sony.rc \
     idd.fstab \
     init.sony.idd.rc
 
