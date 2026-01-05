@@ -77,7 +77,8 @@ TARGET_KERNEL_SOURCE := kernel/sony/sm8250
 # Use External DTC
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc \
-    DTC_OVERLAY_TEST_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/ufdt_apply_overlay
+    DTC_OVERLAY_TEST_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/ufdt_apply_overlay \
+    LLVM=1 LLVM_IAS=1
 
 # Platform
 TARGET_BOARD_PLATFORM := kona
