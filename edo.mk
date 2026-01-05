@@ -216,6 +216,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Charger
+PRODUCT_PACKAGES += \
+    vendor.semc.hardware.charger@1.0.vendor
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init_thermal.sh \

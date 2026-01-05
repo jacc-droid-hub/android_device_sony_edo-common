@@ -571,7 +571,6 @@ vendor/bin/hvdcp_opti
 vendor/bin/chg-pwr-service
 vendor/bin/hw/vendor.semc.hardware.charger@1.0-service
 vendor/etc/init/vendor.semc.hardware.charger@1.0-service.rc
-vendor/lib64/vendor.semc.hardware.charger@1.0.so
 
 # CNE
 product/framework/com.quicinc.cne.api-V1.1-java.jar
