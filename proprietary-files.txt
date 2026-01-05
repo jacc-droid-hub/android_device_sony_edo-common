@@ -1,4 +1,4 @@
-# Stock package version: Sony/pdx206/pdx206:10/QKQ1.200108.002/1:user/release-keys
+# Sony package version: 58.0.A.28.51
 
 # ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -433,6 +433,7 @@ vendor/lib64/com.qti.feature2.rt.so
 vendor/lib64/com.qti.feature2.serializer.so
 vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
+vendor/lib64/libSNPE.so
 vendor/lib64/libarcsoft_bokeh_adapter.so
 vendor/lib64/libarcsoft_dualcam_refocus_image.so
 vendor/lib64/libarcsoft_dualcam_refocus_video.so
@@ -529,7 +530,6 @@ vendor/lib64/vendor.somc.camera.device@3.2-impl.so
 vendor/lib64/vendor.somc.camera.device@3.3-impl.so
 vendor/lib64/vendor.somc.camera.device@3.4-impl.so
 vendor/lib64/vendor.somc.camera.device@3.5-impl.so
-vendor/lib64/vendor.semc.hardware.light@1.0.so
 
 # Camera postprocessing
 vendor/lib/libscveBlobDescriptor.so
@@ -941,8 +941,8 @@ vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
-vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
-vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
+-vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
+-vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
 vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
@@ -1147,7 +1147,7 @@ vendor/lib/kobjeventd/touch_cover.so
 vendor/lib64/kobjeventd/touch_cover.so
 
 # Listen
-vendor/lib64/hw/sound_trigger.primary.kona.so
+vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
@@ -1159,7 +1159,7 @@ vendor/lib/liblistenjni.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
-vendor/lib/hw/sound_trigger.primary.kona.so
+vendor/lib64/hw/sound_trigger.primary.kona.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2svarnn.so
 vendor/lib64/libcapiv2vop.so
@@ -1277,10 +1277,6 @@ vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/vendor.qti.hardware.perf@2.0.so
 
-# Privapp permissions
-system/etc/permissions/privapp-permissions-com.qualcomm.location.xml
-system/etc/permissions/privapp-permissions-sony.xml
-
 # QMI
 system/etc/permissions/privapp-permissions-qti.xml
 system/etc/permissions/qti_libpermissions.xml
@@ -1337,8 +1333,11 @@ vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
 -product/app/embms/embms.apk
+product/etc/permissions/com.qualcomm.location.xml
+system/etc/permissions/com.qualcomm.qti.izattools.xml
 product/etc/permissions/embms.xml
 product/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml
@@ -1433,6 +1432,7 @@ vendor/radio/qcril_database/qcril.db
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
+system/etc/permissions/com.qualcomm.qti.imscmservice.xml
 product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
 product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
 product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
@@ -1587,7 +1587,7 @@ vendor/etc/sensors/config/wigig_sensing_0.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
-#Proto is in system for 10.
+# Proto is in system for 10
 system/etc/sensors/proto/descriptor.proto
 system/etc/sensors/proto/nanopb.proto
 system/etc/sensors/proto/qti_gravity.proto
