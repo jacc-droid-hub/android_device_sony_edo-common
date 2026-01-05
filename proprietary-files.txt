@@ -714,9 +714,6 @@ vendor/bin/hw/vendor.semc.hardware.display@1.2-service
 vendor/etc/init/vendor.semc.hardware.display@1.2-service.rc
 vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
-vendor/lib64/vendor.semc.hardware.display@1.0.so
-vendor/lib64/vendor.semc.hardware.display@1.1.so
-vendor/lib64/vendor.semc.hardware.display@1.2.so
 
 # Display (HDR)
 vendor/lib/libhdr_tm.so
