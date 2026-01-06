@@ -549,6 +549,5 @@
      <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 
     <!-- Is the device capable of hot swapping an ICC Card -->
-    <!-- edo should have this, but undefined in 19.1?? -->
     <bool name="config_hotswapCapable">true</bool>
 </resources>
