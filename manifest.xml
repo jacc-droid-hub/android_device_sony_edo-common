@@ -76,10 +76,8 @@
         <interface>
             <name>ICameraProvider</name>
             <instance>internal/0</instance>
-            <instance>external/0</instance>
         </interface>
         <fqname>@2.4::ICameraProvider/internal/0</fqname>
-        <fqname>@2.4::ICameraProvider/external/0</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.drm</name>
