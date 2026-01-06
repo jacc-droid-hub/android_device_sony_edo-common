@@ -102,6 +102,7 @@ vendor/lib64/libqtigef.so
 # Audio FX Modules
 system/etc/permissions/audiosphere.xml
 system/framework/audiosphere.jar
+vendor/lib/hw/audio.primary.kona.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdnnrwrapper.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -114,21 +115,30 @@ vendor/lib/libHpEqApi.so
 vendor/lib/libOARenderer.so
 vendor/lib/libSForceVSE.so
 vendor/lib/libSNPE.so
+vendor/lib/liba2dpoffload.so
 vendor/lib/libaudiokeymgr.so
 vendor/lib/libaudiosnpewrapper.so
+vendor/lib/libbatterylistener.so
 vendor/lib/libc++_shared.so
+vendor/lib/libcomprcapture.so
 vendor/lib/libdapparamstorage.so
+vendor/lib/libexthwplugin.so
+vendor/lib/libhdmiedid.so
+vendor/lib/libhfp.so
 vendor/lib/libiVptApi.so
 vendor/lib/libiVptHkiDec.so
 vendor/lib/libiVptLibC.so
 vendor/lib/libops.so
 vendor/lib/librebuffering.so
+vendor/lib/libsndmonitor.so
 vendor/lib/libsnpe_dsp_domains_v2.so
 vendor/lib/libsony3daudioeffect.so
+vendor/lib/libspkrprot.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libvpt3d.so
 vendor/lib/libznr.so
 vendor/lib/vendor.dolby.hardware.dms@1.0.so
+vendor/lib64/hw/audio.primary.kona.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
@@ -138,15 +148,24 @@ vendor/lib64/soundfx/libswdap.so
 vendor/lib64/libHpEqApi.so
 vendor/lib64/libOARenderer.so
 vendor/lib64/libSNPE.so
+vendor/lib64/liba2dpoffload.so
 vendor/lib64/libSForceVSE.so
 vendor/lib64/libaudiokeymgr.so
+vendor/lib64/libbatterylistener.so
+vendor/lib64/libcomprcapture.so
 vendor/lib64/libdapparamstorage.so
+vendor/lib64/libexthwplugin.so
+vendor/lib64/libhdmiedid.so
+vendor/lib64/libhfp.so
 vendor/lib64/libiVptApi.so
 vendor/lib64/libiVptHkiDec.so
 vendor/lib64/libiVptLibC.so
 vendor/lib64/libops.so
 vendor/lib64/librebuffering.so
+vendor/lib64/libsndmonitor.so
+vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libsony3daudioeffect.so
+vendor/lib64/libspkrprot.so
 vendor/lib64/libvpt3d.so
 vendor/lib64/vendor.dolby.hardware.dms@1.0.so
 
@@ -165,6 +184,7 @@ vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 
 # Bluetooth (A2DP)
+vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
@@ -173,6 +193,7 @@ vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
