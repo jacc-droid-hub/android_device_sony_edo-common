@@ -24,7 +24,6 @@
         <activity
                 android:name=".display.DisplaySettingsActivity"
                 android:exported="false"
-                android:theme="@style/Theme.SubSettingsBase"
                 android:label="@string/display_setting_header">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS"/>

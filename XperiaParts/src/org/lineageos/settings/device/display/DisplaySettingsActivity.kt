@@ -5,18 +5,16 @@
 
 package org.lineageos.settings.device.display
 
+import android.app.Activity
 import android.os.Bundle
 
-import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity
-import com.android.settingslib.collapsingtoolbar.R
-
-class DisplaySettingsActivity : CollapsingToolbarBaseActivity() {
+class DisplaySettingsActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        fragmentManager
-                .beginTransaction()
-                .replace(R.id.content_frame, DisplaySettingsFragment(), TAG)
-                .commit()
+
+        fragmentManager.beginTransaction()
+            .replace(android.R.id.content, DisplaySettingsFragment(), TAG)
+            .commit()
     }
 
     companion object {
