@@ -1,0 +1,10 @@
+type cust_system_prop, property_type;
+type demo_prop, property_type;
+type display_always_on_prop, property_type;
+type hal_somc_charger_prop, property_type;
+type sdm_prop, property_type;
+type somc_camera_prop, property_type;
+type somc_thermal_prop, property_type;
+type vendor_camera_sensor_prop, property_type;
+type vendor_display_color_prop, property_type;
+type vendor_fingerprint_hwid_prop, property_type;
