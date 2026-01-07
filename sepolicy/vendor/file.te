@@ -12,7 +12,6 @@ type idd_socket_file, file_type;
 type sony_camera_device, file_type;
 
 type tof_rgbcir_sysfs, fs_type, sysfs_type;
-type sysfs_camera, fs_type, sysfs_type;
 
 type sysfs_sects, fs_type, sysfs_type;
 
