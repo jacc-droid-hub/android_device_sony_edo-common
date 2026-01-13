@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
-    <item name="ambient.on">75.00</item>
-    <item name="screen.on">140.01</item>
-    <item name="screen.full">381.95</item>
+    <item name="ambient.on">46.00</item>
+    <item name="screen.on">81.06</item>
+    <item name="screen.full">387.22</item>
     <item name="bluetooth.active">0</item>
     <item name="bluetooth.on">0</item>
     <item name="wifi.on">9.27</item>
     <item name="wifi.active">73.48</item>
     <item name="wifi.scan">65.64</item>
     <item name="audio">23.49</item>
-    <item name="video">47.08</item>
+    <item name="video">55.77</item>
     <item name="camera.flashlight">27.98</item>
-    <item name="camera.avg">405.69</item>
+    <item name="camera.avg">479.42</item>
     <item name="radio.active">137.50</item>
     <item name="radio.scanning">105.40</item>
     <array name="radio.on">
