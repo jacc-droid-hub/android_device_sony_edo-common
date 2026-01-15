@@ -1800,23 +1800,21 @@ vendor/firmware/tzwvcpybuf.b07
 vendor/firmware/tzwvcpybuf.mdt
 
 # WiFi Display
+product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 system/bin/wfdservice
 system/etc/init/wfdservice.rc
 -system/framework/WfdCommon.jar
--system/priv-app/WfdService/WfdService.apk
 system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
-system/lib/libFileMux.so
 system/lib/libmmrtpdecoder.so
 system/lib/libmmrtpencoder.so
 system/lib/libwfdaac.so
 system/lib/libwfdavenhancements.so
-system/lib/libwfdclient.so
 system/lib/libwfdcommonutils.so
 system/lib/libwfdconfigutils.so
 system/lib/libwfdmminterface.so
 system/lib/libwfdmmsink.so
 system/lib/libwfdmmsrc_system.so
-system/lib/libwfdnative.so
 system/lib/libwfdrtsp.so
 system/lib/libwfdservice.so
 system/lib/libwfdsinksm.so
@@ -1826,15 +1824,12 @@ system/lib/libwfduibcsink.so
 system/lib/libwfduibcsinkinterface.so
 system/lib/libwfduibcsrc.so
 system/lib/libwfduibcsrcinterface.so
-system/lib64/libFileMux.so
 system/lib64/libmmrtpdecoder.so
 system/lib64/libmmrtpencoder.so
-system/lib64/libwfdclient.so
 system/lib64/libwfdcommonutils.so
 system/lib64/libwfdconfigutils.so
 system/lib64/libwfdmminterface.so
 system/lib64/libwfdmmsink.so
-system/lib64/libwfdnative.so
 system/lib64/libwfdrtsp.so
 system/lib64/libwfdsinksm.so
 system/lib64/libwfdsm.so
@@ -1843,16 +1838,9 @@ system/lib64/libwfduibcsink.so
 system/lib64/libwfduibcsinkinterface.so
 system/lib64/libwfduibcsrc.so
 system/lib64/libwfduibcsrcinterface.so
-
-# WiFi Display (vendor)
-product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/bin/wifidisplayhalservice
 vendor/etc/wfdconfig.xml
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
-vendor/lib/libFileMux_proprietary.so
-vendor/lib/libOmxMux_proprietary.so
-vendor/lib/libmmparser_lite_proprietary.so
-vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libmmrtpencoder_proprietary.so
 vendor/lib/libwfdaac_vendor.so
@@ -1876,8 +1864,13 @@ vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
-vendor/lib64/libmmrtpdecoder_proprietary.so
-vendor/lib64/libmmrtpencoder_proprietary.so
+vendor/lib64/libwfdhdcpcp.so
+vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+
+# Wifi Display (WfdService) - from mata - QP1A.190711.148
+system/lib64/libwfdclient.so|e6954d14a794d457325c2cf9a5daa0392a4c34ec
+system/lib64/libwfdnative.so|aeb793285dd721611039d5f3ffbe9b85c79b1da4
+-system/priv-app/WfdService/WfdService.apk|dc8ba0adf8c1d5327d82dbae832523f486e61a69
 
 # VPP
 vendor/bin/vppservice
