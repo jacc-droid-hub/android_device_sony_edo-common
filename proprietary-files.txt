@@ -1787,7 +1787,7 @@ vendor/firmware/tzwvcpybuf.b06
 vendor/firmware/tzwvcpybuf.b07
 vendor/firmware/tzwvcpybuf.mdt
 
-# WiFi Display (system)
+# WiFi Display
 system/bin/wfdservice
 system/etc/init/wfdservice.rc
 -system/framework/WfdCommon.jar
