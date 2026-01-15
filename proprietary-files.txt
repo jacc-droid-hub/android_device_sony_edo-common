@@ -147,9 +147,9 @@ vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/libHpEqApi.so
 vendor/lib64/libOARenderer.so
-vendor/lib64/libSNPE.so
 vendor/lib64/liba2dpoffload.so
 vendor/lib64/libSForceVSE.so
+vendor/lib64/libSNPE.so
 vendor/lib64/libaudiokeymgr.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libcomprcapture.so
