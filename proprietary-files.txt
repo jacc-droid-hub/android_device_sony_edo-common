@@ -717,28 +717,11 @@ vendor/lib64/vendor.semc.hardware.display@1.1.so
 vendor/lib64/vendor.semc.hardware.display@1.2.so
 
 # Display (HDR)
-vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
 
-# Display (HWC)
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
-vendor/lib/libqdutils.so
-vendor/lib/libsdmcore.so
-vendor/lib/libsdmutils.so
-vendor/lib64/libqdutils.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmutils.so
-
 # Display (SDM)
-vendor/lib/libdisplayqos.so
-vendor/lib/libqseed3.so
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-colormgr-algo.so
-vendor/lib/libsdm-diag.so
-vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmextension.so
-vendor/lib/libtinyxml2_1.so
 vendor/lib64/libdisplayqos.so
+vendor/lib64/libqdutils.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
