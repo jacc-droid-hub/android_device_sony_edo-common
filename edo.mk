@@ -264,6 +264,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
+    libxml2 \
     libvulkan \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
@@ -445,17 +446,6 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
-
-# RIL
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4 \
-    android.hardware.radio.config@1.2 \
-    android.hardware.radio.deprecated@1.0 \
-    libprotobuf-cpp-full \
-    librmnetctl \
-    libxml2 \
-    extphonelib \
-    extphonelib.xml
 
 # Sensors
 PRODUCT_PACKAGES += \
