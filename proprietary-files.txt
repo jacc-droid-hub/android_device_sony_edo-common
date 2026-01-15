@@ -1846,7 +1846,6 @@ system/lib64/libwfduibcsrcinterface.so
 
 # WiFi Display (vendor)
 product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
-product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/bin/wifidisplayhalservice
 vendor/etc/wfdconfig.xml
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
@@ -1877,11 +1876,6 @@ vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
-vendor/lib64/libFileMux_proprietary.so
-vendor/lib64/libOmxMux_proprietary.so
-vendor/lib64/libmmparser_lite_proprietary.so
-vendor/lib64/libwfdhdcpcp.so
-vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib64/libmmrtpdecoder_proprietary.so
 vendor/lib64/libmmrtpencoder_proprietary.so
 
