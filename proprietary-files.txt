@@ -92,7 +92,6 @@ vendor/lib64/libssrec.so
 # Audio FX Modules
 system/etc/permissions/audiosphere.xml
 system/framework/audiosphere.jar
-vendor/lib/hw/audio.primary.kona.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdnnrwrapper.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -128,7 +127,6 @@ vendor/lib/libsymphony-cpu.so
 vendor/lib/libvpt3d.so
 vendor/lib/libznr.so
 vendor/lib/vendor.dolby.hardware.dms@1.0.so
-vendor/lib64/hw/audio.primary.kona.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
