@@ -156,17 +156,23 @@ vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 
 # Bluetooth (A2DP)
+vendor/bin/hw/vendor.qti.hardware.bluetooth_dun@1.0-service
+vendor/etc/init/vendor.qti.hardware.bluetooth_dun@1.0-service.rc
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_dun@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
+vendor/lib/vendor.qti.hardware.bluetooth_dun@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_dun@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/btaudio_offload_if.so
@@ -451,6 +457,8 @@ vendor/lib64/libcvp2_hfi.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libexcal_core.so
 vendor/lib64/libexcal_system.so
+vendor/lib64/libgralloccore.so
+vendor/lib64/libgrallocutils.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libiu456_datapath_processor.so
 vendor/lib64/libmmcamera_faceproc.so
@@ -511,6 +519,7 @@ vendor/lib64/libsymphony-cpu.so
 vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/local_libcamera_metadata.so
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 vendor/lib64/vendor.somc.camera.device@3.2-impl.so
@@ -777,6 +786,8 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # Display utils
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
@@ -1260,6 +1271,7 @@ vendor/lib/libperfgluelayer.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
+vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
 vendor/lib64/libperfconfig.so
@@ -1270,6 +1282,9 @@ vendor/lib64/libqti-util.so
 vendor/lib64/vendor.qti.hardware.perf@2.0.so
 
 # Privapp permissions
+system/etc/permissions/com.qualcomm.location.xml
+system/etc/permissions/com.qualcomm.qti.imscmservice.xml
+system/etc/permissions/com.qualcomm.qti.izattools.xml
 system/etc/permissions/privapp-permissions-com.qualcomm.location.xml
 system/etc/permissions/privapp-permissions-sony.xml
 
@@ -1330,7 +1345,9 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
+-product/app/datastatusnotification/datastatusnotification.apk
 -product/app/embms/embms.apk
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 product/etc/permissions/embms.xml
 product/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml
@@ -1445,6 +1462,7 @@ vendor/lib/vendor.qti.data.slm@1.0.so
 
 # Secd
 system/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
+system/lib/vendor.somc.hardware.miscta@1.0.so:vendor/lib/vendor.somc.hardware.miscta@1.0.so
 system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/hw/vendor.semc.hardware.secd@1.1-service
@@ -1514,6 +1532,7 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/etc/sensors/config/bmp380_0.json
 vendor/etc/sensors/config/kona_ak991x_0.json
 vendor/etc/sensors/config/kona_ak991x_0_somc_platform.json
+vendor/etc/sensors/config/kona_ak991x_0_somc_product.json
 vendor/etc/sensors/config/kona_bmp380_0.json
 vendor/etc/sensors/config/kona_bu52053nvx_0.json
 vendor/etc/sensors/config/kona_default_sensors.json
@@ -1524,6 +1543,7 @@ vendor/etc/sensors/config/kona_hdk_lsm6dst_1.json
 vendor/etc/sensors/config/kona_irq.json
 vendor/etc/sensors/config/kona_lps22hh_0.json
 vendor/etc/sensors/config/kona_lsm6dsm_0.json
+vendor/etc/sensors/config/kona_lsm6dsm_0_somc_product.json
 vendor/etc/sensors/config/kona_lsm6dst_0.json
 vendor/etc/sensors/config/kona_lsm6dst_1.json
 vendor/etc/sensors/config/kona_power_0.json
