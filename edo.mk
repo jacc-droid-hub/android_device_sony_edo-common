@@ -427,11 +427,15 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
+
+# Radio
+PRODUCT_PACKAGES += \
+    libjson \
+    librmnetctl
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
