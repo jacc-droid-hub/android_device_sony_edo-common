@@ -187,7 +187,7 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
+TARGET_POWER_SET_FEATURE_LIB := libpower_feature.sony_common
 
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
