@@ -1409,7 +1409,6 @@ system/etc/permissions/com.qualcomm.location.xml
 system/etc/permissions/com.qualcomm.qti.imscmservice.xml
 system/etc/permissions/com.qualcomm.qti.izattools.xml
 system/etc/permissions/privapp-permissions-com.qualcomm.location.xml
-system/etc/permissions/privapp-permissions-qti.xml
 system/etc/permissions/privapp-permissions-sony.xml
 
 # QMI
