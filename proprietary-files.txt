@@ -836,8 +836,8 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # Display utils
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
+#vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
+#vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
@@ -2040,8 +2040,8 @@ system/lib64/libwfdnative.so|aeb793285dd721611039d5f3ffbe9b85c79b1da4
 -system/priv-app/WfdService/WfdService.apk|dc8ba0adf8c1d5327d82dbae832523f486e61a69
 
 # VPP
-system/lib/vendor.somc.hardware.swiqi@1.0.so
-system/lib64/vendor.somc.hardware.swiqi@1.0.so
+system/lib/vendor.somc.hardware.swiqi@1.0.so:vendor/lib/vendor.somc.hardware.swiqi@1.0.so
+system/lib64/vendor.somc.hardware.swiqi@1.0.so:vendor/lib64/vendor.somc.hardware.swiqi@1.0.so
 vendor/bin/vppservice
 vendor/etc/init/vppservice.rc
 vendor/lib/libpfter.so
